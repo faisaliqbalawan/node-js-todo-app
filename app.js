@@ -23,6 +23,7 @@ connectDB();
 // router
 app.use(require("./server/routes/routes"));
 
-app.listen(port, function () {
-  console.log(`Server is listening on http://localhost:${port}`);
+app.listen(port, '0.0.0.0', function () {
+  console.log(`Server is listening on http://0.0.0.0:${port}`);
 });
+
